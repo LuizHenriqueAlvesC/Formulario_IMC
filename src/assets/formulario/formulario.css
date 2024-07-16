@@ -14,12 +14,17 @@ html, body {
 }
 
 .appHeader {
-    background-color: #282c34;
-    min-height: 100vh;
+    background-color: #17284b;
     display: flex;
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
+    border-radius: 10px;
+}
+
+.appHeader h1 {
+    margin: 24px;
+    font-size: 48px;
 }
 
 form {

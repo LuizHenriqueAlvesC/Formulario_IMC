@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './formulario.module.css';
+import './formulario.css';
 
 function ExecutaFormulario() {
     const [height, setHeight] = useState('');
@@ -15,11 +15,11 @@ function ExecutaFormulario() {
 
         let classification = '';
         if (imcValue < 18.5) {
-            classification = 'Magreza';
+            classification = 'Abaixo do peso';
         } else if (imcValue >= 18.5 && imcValue < 24.9) {
-            classification = 'Normal';
+            classification = 'Peso normal';
         } else if (imcValue >= 25 && imcValue < 29.9) {
-            classification = 'Sobrepeso';
+            classification = 'Pré-obesidade';
         } else if (imcValue >= 30 && imcValue < 34.9) {
             classification = 'Obesidade Grau I';
         } else if (imcValue >= 35 && imcValue < 39.9) {
